@@ -30,4 +30,4 @@ x= anagram(s1,s2)
 if x:
   print("Two Strings are Anagrams")
 else:
-  print("No They are not anagram")
+  print("No, They are not anagrams")
