@@ -1,3 +1,6 @@
+'''
+Check if Two strings given by the user has the same character sets
+'''
 def anagram(s1,s2):
   s1 = s1.replace(' ','').lower()
   s2 = s2.replace(' ','').lower()
@@ -21,5 +24,10 @@ def anagram(s1,s2):
     if count[k] != 0:
       return False
   return True    
-x= anagram("Clint Eastwood","old west action")
-print(x)
+s1 = input("Enter The First String\n")
+s2 = input("Enter The Secound String\n")
+x= anagram(s1,s2)
+if x:
+  print("Two Strings are Anagrams")
+else:
+  print("No They are not anagram")
